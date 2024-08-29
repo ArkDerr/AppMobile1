@@ -1,0 +1,37 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <img class="logo"
+      src="assets/img/Duoc.png"
+      alt="LogoDuoc"
+    >
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div>
+    <ion-item>
+      <ion-input [(ngModel)]="email" label="Email: " type="email" placeholder=""></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-input [(ngModel)]="password" label="Password: " type="password" value=""></ion-input>
+    </ion-item>
+</div>
+<div>
+  <ion-button (click)="login()" expand="block">Login</ion-button>
+</div>
+
+<ion-grid>
+  <ion-row>
+    <ion-col class="registrar">
+      <div>
+        <a [routerLink]="['/registro']" routerLinkActive="router-link-active">Registrar</a>
+    </div>
+  </ion-col>
+    <ion-col class="recuperar">
+      <div>
+        <a [routerLink]="['/resetpass']" routerLinkActive="router-link-active">Resuperar contraseña</a>
+      </div>
+    </ion-col>
+  </ion-row>
+</ion-grid>
+</ion-content>

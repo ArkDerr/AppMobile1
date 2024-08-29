@@ -1,0 +1,21 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <img class="logo"
+      src="assets/img/Duoc.png"
+      alt="LogoDuoc"
+    >
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div>
+    <ion-item>
+      <ion-input [(ngModel)]="email" label="Email: " type="email" placeholder=""></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-input [(ngModel)]="password" label="Password: " type="password" value=""></ion-input>
+    </ion-item>
+</div>
+<div>
+  <ion-button (click)="registro()" expand="block">Registrar</ion-button>
+</div>
